@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Listado</title>
+</head>
+<body>
+	<form th:object="${estudiante}" >
+		<label for="fnombre">Nombre:</label><br>
+		<input type="text" id="fnombre" th:field="*{nombre}"><br>
+		<label for="fapellido">Apellido:</label><br>
+		<input type="text" id="fapellido" th:field="*{apellido}"><br>
+		
+	</form>
+</body>
+</html>
